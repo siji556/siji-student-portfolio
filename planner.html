@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic Planner | Samuel Olasijibomi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>SIJI<span>.</span></h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="planner-container">
+
+        <section class="planner-heading">
+
+            <p>STAY ORGANIZED</p>
+
+            <h1>My Academic Planner</h1>
+
+            <p>
+                Organize your academic activities,
+                manage deadlines and keep track of your progress.
+            </p>
+
+        </section>
+
+        <!-- TASK STATISTICS -->
+
+        <section class="task-stats">
+
+            <div class="stat-card">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+
+        </section>
+
+        <!-- ADD TASK FORM -->
+
+        <section class="task-form-section">
+
+            <h2>Add a New Task</h2>
+
+            <form id="taskForm">
+
+                <div class="form-group">
+
+                    <label for="taskInput">Task Description</label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="e.g. Study Introduction to Web Technologies"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="taskDate">Due Date</label>
+
+                    <input
+                        type="date"
+                        id="taskDate"
+                    >
+
+                </div>
+
+                <button type="submit">
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- TASK LIST -->
+
+        <section class="task-list-section">
+
+            <h2>My Tasks</h2>
+
+            <div id="taskList">
+
+                <p class="empty-message">
+                    No tasks yet. Add your first academic task!
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Samuel Olasijibomi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/planner.js"></script>
+
+</body>
+
+</html>
