@@ -651,3 +651,15 @@ footer {
     }
 
 }
+
+.intro-video {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-video video {
+    width: 100%;
+    border-radius: 10px;
+}
